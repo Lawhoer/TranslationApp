@@ -1,0 +1,16 @@
+HBox{
+    -fx-background-color: aqua;
+}
+.linear-pane{
+    -fx-background-color: linear-gradient(#e66465, #9198e5);
+}
+.no-scroll-bar {
+    -fx-background-color: white; /* Arka plan rengini istediğiniz gibi ayarlayabilirsiniz */
+    -fx-background-insets: 0;
+    -fx-background: null;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: black; /* İsteğe bağlı olarak metin rengini ayarlayabilirsiniz */
+    -fx-border-color: transparent; /* Kenar rengini istediğiniz gibi ayarlayabilirsiniz */
+    -fx-background-insets: 0;
+}

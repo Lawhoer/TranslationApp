@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="406.0" style="-fx-border-width: 2; -fx-border-color: gray;" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.Controller">
+    <children>
+        <BorderPane maxHeight="300.0" maxWidth="420.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="402.0" style="-fx-border-color: black;" styleClass="no-scroll-bar" stylesheets="@display.css">
+            <left>
+                <Pane prefHeight="150.0" prefWidth="47.0" styleClass="linear-pane" stylesheets="@display.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="button" mnemonicParsing="false" onAction="#runBoy" prefHeight="150.0" prefWidth="48.0" style="-fx-background-color: transparent;" text="|" />
+                    </children></Pane>
+            </left>
+         <center>
+                <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="no-scroll-bar" text="textText" textAlignment="CENTER" wrappingWidth="244.45268559455872" BorderPane.alignment="CENTER" />
+         </center>
+        </BorderPane>
+    </children>
+</VBox>
