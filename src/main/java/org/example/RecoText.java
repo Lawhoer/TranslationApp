@@ -10,8 +10,7 @@ public class RecoText {
 
         // Kelimeleri algılayan uygulamanın genel ayarları
         ts.setDatapath(Main.tessdata);
-        ts.setTessVariable("tessedit_char_whitelist"," abcçdefghijklmnopqrstuvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSTUÜVWXYZ-.=,'?!&/{}[]*_%+^'<>0123456789");
-
+        ts.setLanguage(Main.dil1);
         // Algıladıgı kelimeler
         List<Word> words = ts.getWords(BufferedImage,ITessAPI.TessPageIteratorLevel.RIL_BLOCK);
 

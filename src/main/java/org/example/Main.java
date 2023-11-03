@@ -20,7 +20,7 @@ public class Main implements NativeKeyListener {
     private static final int key2=NativeKeyEvent.VC_ALT;
     private static final int key3=NativeKeyEvent.VC_W;
     private boolean QPressed = false, ALTPressed = false,WPressed = false;
-    public static String dil,tessdata,googleKey,mouseIcon;
+    public static String dil,dil1,tessdata,googleKey,mouseIcon;
 
     public static final void main(String[] args) throws NativeHookException, FileNotFoundException, URISyntaxException {
 
@@ -32,7 +32,8 @@ public class Main implements NativeKeyListener {
         JsonReader jsonReader = Json.createReader(new FileReader(envDosyasi));
         JsonObject jsonObject = jsonReader.readObject();
         googleKey = jsonObject.getString("googleKey");
-        dil = jsonObject.getString("dil");
+        dil = jsonObject.getString("HangiDile");
+        dil1 = jsonObject.getString("HangiDilden");
         tessdata = new File(jarDizin, "src/tessdata").getPath();
         mouseIcon = new File(jarDizin, "src/MouseIcon.png").getPath();
         jsonReader.close();
