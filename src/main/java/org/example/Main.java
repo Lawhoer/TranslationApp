@@ -32,8 +32,8 @@ public class Main implements NativeKeyListener {
         JsonReader jsonReader = Json.createReader(new FileReader(envDosyasi));
         JsonObject jsonObject = jsonReader.readObject();
         googleKey = jsonObject.getString("googleKey");
-        dil = jsonObject.getString("HangiDile");
-        dil1 = jsonObject.getString("HangiDilden");
+        dil = jsonObject.getString("ToLang");
+        dil1 = jsonObject.getString("FromLang");
         tessdata = new File(jarDizin, "src/tessdata").getPath();
         mouseIcon = new File(jarDizin, "src/MouseIcon.png").getPath();
         jsonReader.close();
